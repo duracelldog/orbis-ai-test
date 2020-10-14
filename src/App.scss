@@ -1,0 +1,255 @@
+.text-black {
+  font-family: 'NotoSansKR-Black';
+}
+
+.text-bold {
+  font-family: 'NotoSansKR-Bold';
+}
+
+.text-medium {
+  font-family: 'NotoSansKR-Medium';
+}
+
+.text-regular {
+  font-family: 'NotoSansKR-Regular';
+}
+
+
+
+.orbis-docs__list-wrapper{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px 0;
+  & > li:first-child{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 734px) {
+  .orbis-docs__list-wrapper{
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .orbis-docs__list-wrapper{
+    padding: 0;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .orbis-docs__list-wrapper{
+    margin: 0;
+  }
+}
+
+.orbis-docs__list-section{
+  margin-top: 60px;
+  padding-bottom: 15px;
+  background-color: lightgrey;
+}
+@media screen and (max-width: 500px) {
+  .orbis-docs__list-section{
+    background-color: white;
+  }
+}
+.orbis-docs__list-item{
+  background-color: white;
+  margin-top: 15px;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .orbis-docs__list-item{
+    margin-top: 30px;
+    flex-direction: column-reverse;
+    padding: 30px 0 0;
+    border-top: 1px dotted grey;
+  }
+}
+@media screen and (max-width: 350px) {
+  .orbis-docs__list-item{
+    padding: 0;
+    border: 0;
+  }
+}
+
+.orbis-docs__item-copies{
+  margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  .orbis-docs__item-copies{
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .orbis-docs__item-copies{
+    margin: 15px 15px 0;
+  }
+}
+.orbis-docs__item-image{
+  position: relative;
+  & figure{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
+    background-color: lightgrey;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .orbis-docs__item-image{
+    margin: 0 auto;
+    & figure{
+      cursor: pointer;
+      width: 320px;
+      height: 320px;
+      background-size: 320px 320px;
+      background-color: lightgrey;
+    }
+  }
+}
+.orbis-docs__heart-icon{
+  color: gray;
+  margin-left: 8px;
+  margin-bottom: -3px;
+  &.on{
+    color: red;
+  }
+}
+
+.orbis-docs__item-headline{
+  // display: -webkit-box;
+  // overflow: hidden;
+  // -webkit-box-orient: vertical;
+  // -webkit-line-clamp: 2;
+  cursor: pointer;
+
+  & span:hover{
+    text-decoration: underline;
+  }
+}
+
+.orbis-docs__item-article{
+  margin-top: 5px;
+}
+
+.orbis-docs__item-info{
+  margin-top: 5px;
+}
+
+.orbis-docs__item-more-btn{
+  cursor: pointer;
+  margin-left: 10px;
+}
+.orbis-docs__item-writer,
+.orbis-docs__item-date{
+  font-size: 14px;
+  color: grey;
+}
+
+.orbis-docs__loading-icon{
+  font-size: 30px;
+  color: grey;
+  animation: loading-animation 2s linear 2s infinite;
+}
+@keyframes loading-animation{
+  0%   {transform: rotateZ(0)}
+  100% {transform: rotateZ(360deg);}
+}
+.orbis-docs__list-loading{
+  opacity: 0;
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.5s;
+  &.on{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 734px) {
+  .orbis-docs__list-loading{
+    margin: 0 15px;
+  }
+}
+
+.orbis-docs__list-title-wrapper{
+  padding-top: 15px;
+}
+.orbis-docs__list-title{
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+.orbis-nav__nav-tag{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: 1px solid lightgray;
+  height: 60px;
+  box-sizing: border-box;
+}
+.orbis-nav__nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  height: inherit;
+  
+
+  & > div{
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & > div:first-child{
+    justify-content: flex-start;
+  }
+  & > div:last-child{
+    justify-content: flex-end;
+  }
+}
+
+
+.orbis-nav__list-icon{
+  font-size: 30px;
+}
+.orbis-nav__search-icon{
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.orbis-nav__search-space{
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+  top: 70px;
+  right: 10px;
+  &.on{
+    opacity: 1;
+  }
+}
+.orbis-nav__input-box{
+  border-radius: 4px;
+  border: 0;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid grey;
+}

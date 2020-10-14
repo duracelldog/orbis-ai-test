@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'NotoSansKR-Black';
+  src: url("./assets/fonts/NotoSansKR-Black.otf");
+}
+@font-face {
+  font-family: 'NotoSansKR-Bold';
+  src: url("./assets/fonts/NotoSansKR-Bold.otf");
+}
+@font-face {
+  font-family: 'NotoSansKR-Light';
+  src: url("./assets/fonts/NotoSansKR-Light.otf");
+}
+@font-face {
+  font-family: 'NotoSansKR-Medium';
+  src: url("./assets/fonts/NotoSansKR-Medium.otf");
+}
+@font-face {
+  font-family: 'NotoSansKR-Regular';
+  src: url("./assets/fonts/NotoSansKR-Regular.otf");
+}
+@font-face {
+  font-family: 'NotoSansKR-Thin';
+  src: url("./assets/fonts/NotoSansKR-Thin.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'NotoSansKR-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'NotoSansKR-Bold';
+  margin: 0;
+}
+h1{
+  font-size: 2em;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: unset;
 }
